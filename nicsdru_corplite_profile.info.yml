@@ -50,3 +50,6 @@ install:
   - views_ui
   - pathauto
   - views
+themes:
+  - olivero
+  - claro
