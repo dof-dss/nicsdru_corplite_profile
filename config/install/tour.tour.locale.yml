@@ -1,11 +1,8 @@
-uuid: 4903ea3c-fb21-415c-bf0f-b794573af446
 langcode: en-gb
 status: true
 dependencies:
   module:
     - locale
-_core:
-  default_config_hash: Kcx1PIw-KgGbTo5_tOkbI6TWJiP_0Sr7t5T9SuMV2hA
 id: locale
 label: Translation
 module: locale

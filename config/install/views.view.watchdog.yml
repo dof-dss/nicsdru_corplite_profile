@@ -1,12 +1,9 @@
-uuid: c7461fdb-1692-4690-80bd-43418ee7fb40
 langcode: en-gb
 status: true
 dependencies:
   module:
     - dblog
     - user
-_core:
-  default_config_hash: j0txIxY4nkJT_dscmXckM-1vanygDkJAeHPawZKfyH0
 id: watchdog
 label: Watchdog
 module: views
