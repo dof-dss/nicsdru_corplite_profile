@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - node.type.article
-    - taxonomy.vocabulary.tags
   module:
     - comment
     - contextual
@@ -12,7 +11,6 @@ dependencies:
     - node
     - path
     - system
-    - taxonomy
     - toolbar
     - tour
 _core:
@@ -30,14 +28,12 @@ permissions:
   - 'access tour'
   - 'administer url aliases'
   - 'create article content'
-  - 'create terms in tags'
   - 'create url aliases'
   - 'delete article revisions'
   - 'delete own article content'
   - 'delete own files'
   - 'edit own article content'
   - 'edit own comments'
-  - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'
   - 'view own unpublished content'

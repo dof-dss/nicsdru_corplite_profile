@@ -1,27 +1,28 @@
-uuid: 9da167df-eed9-4a7e-b117-3f62a8386225
+uuid: 3afa81af-dfdf-42f1-b232-a3276d542068
 langcode: en-gb
 status: true
 dependencies:
   config:
-    - field.field.node.article.body
-    - field.field.node.article.field_meta_tags
-    - field.field.node.article.field_site_topics
-    - field.field.node.article.field_summary
-    - node.type.article
+    - field.field.node.publication.body
+    - field.field.node.publication.field_meta_tags
+    - field.field.node.publication.field_publication_type
+    - field.field.node.publication.field_published_date
+    - field.field.node.publication.field_site_topics
+    - field.field.node.publication.field_summary
+    - node.type.publication
   module:
+    - datetime
     - metatag
     - path
     - text
-_core:
-  default_config_hash: ewbd6G2uX456-bgwseM2Q-KQG3RkASoyHmTh-XR3oLU
-id: node.article.default
+id: node.publication.default
 targetEntityType: node
-bundle: article
+bundle: publication
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 121
     region: content
     settings:
       rows: 9
@@ -42,6 +43,18 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_publication_type:
+    type: options_select
+    weight: 124
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_published_date:
+    type: datetime_default
+    weight: 124
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_site_topics:
     type: entity_reference_autocomplete
@@ -97,7 +110,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60

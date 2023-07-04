@@ -1,21 +1,22 @@
-uuid: 5c450f37-09e7-4f6a-a185-e0d2dd21620f
+uuid: 96db649b-c7f0-4873-92ac-f4b15d84402f
 langcode: en-gb
 status: true
 dependencies:
   config:
-    - field.field.node.application.body
-    - field.field.node.application.field_additional_information
-    - field.field.node.application.field_meta_tags
-    - field.field.node.application.field_site_topics
-    - field.field.node.application.field_summary
-    - node.type.application
+    - field.field.node.consultation.body
+    - field.field.node.consultation.field_consultation_dates
+    - field.field.node.consultation.field_meta_tags
+    - field.field.node.consultation.field_published_date
+    - field.field.node.consultation.field_site_topics
+    - node.type.consultation
   module:
+    - datetime
     - metatag
     - text
     - user
-id: node.application.default
+id: node.consultation.default
 targetEntityType: node
-bundle: application
+bundle: consultation
 mode: default
 content:
   body:
@@ -25,12 +26,14 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_additional_information:
-    type: text_default
+  field_consultation_dates:
+    type: datetime_default
     label: above
-    settings: {  }
+    settings:
+      timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    weight: 102
+    weight: 105
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
@@ -39,6 +42,15 @@ content:
     third_party_settings: {  }
     weight: 105
     region: content
+  field_published_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 104
+    region: content
   field_site_topics:
     type: entity_reference_label
     label: above
@@ -46,13 +58,6 @@ content:
       link: true
     third_party_settings: {  }
     weight: 103
-    region: content
-  field_summary:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
     region: content
   links:
     settings: {  }

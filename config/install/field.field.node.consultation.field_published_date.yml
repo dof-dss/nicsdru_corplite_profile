@@ -1,0 +1,21 @@
+uuid: fed6c809-b029-4d7e-b211-e468c4f522c5
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_published_date
+    - node.type.consultation
+  module:
+    - datetime
+id: node.consultation.field_published_date
+field_name: field_published_date
+entity_type: node
+bundle: consultation
+label: 'Published date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

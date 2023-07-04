@@ -1,21 +1,21 @@
-uuid: 5b51b185-6ecb-404c-896e-71484f4ab486
+uuid: c79ceb50-6ade-4012-af67-562a9e8bc673
 langcode: en-gb
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.application.body
-    - field.field.node.application.field_additional_information
-    - field.field.node.application.field_meta_tags
-    - field.field.node.application.field_site_topics
-    - field.field.node.application.field_summary
-    - node.type.application
+    - field.field.node.consultation.body
+    - field.field.node.consultation.field_consultation_dates
+    - field.field.node.consultation.field_meta_tags
+    - field.field.node.consultation.field_published_date
+    - field.field.node.consultation.field_site_topics
+    - node.type.consultation
   module:
     - text
     - user
-id: node.application.teaser
+id: node.consultation.teaser
 targetEntityType: node
-bundle: application
+bundle: consultation
 mode: teaser
 content:
   body:
@@ -32,8 +32,8 @@ content:
     weight: 100
     region: content
 hidden:
-  field_additional_information: true
+  field_consultation_dates: true
   field_meta_tags: true
+  field_published_date: true
   field_site_topics: true
-  field_summary: true
   langcode: true

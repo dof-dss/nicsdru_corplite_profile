@@ -1,21 +1,22 @@
-uuid: 5b51b185-6ecb-404c-896e-71484f4ab486
+uuid: 3f4a6131-795d-4516-93f3-141963876fc0
 langcode: en-gb
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.application.body
-    - field.field.node.application.field_additional_information
-    - field.field.node.application.field_meta_tags
-    - field.field.node.application.field_site_topics
-    - field.field.node.application.field_summary
-    - node.type.application
+    - field.field.node.publication.body
+    - field.field.node.publication.field_meta_tags
+    - field.field.node.publication.field_publication_type
+    - field.field.node.publication.field_published_date
+    - field.field.node.publication.field_site_topics
+    - field.field.node.publication.field_summary
+    - node.type.publication
   module:
     - text
     - user
-id: node.application.teaser
+id: node.publication.teaser
 targetEntityType: node
-bundle: application
+bundle: publication
 mode: teaser
 content:
   body:
@@ -32,8 +33,9 @@ content:
     weight: 100
     region: content
 hidden:
-  field_additional_information: true
   field_meta_tags: true
+  field_publication_type: true
+  field_published_date: true
   field_site_topics: true
   field_summary: true
   langcode: true

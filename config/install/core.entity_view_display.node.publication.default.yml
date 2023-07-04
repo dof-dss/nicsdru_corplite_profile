@@ -1,21 +1,24 @@
-uuid: 5c450f37-09e7-4f6a-a185-e0d2dd21620f
+uuid: ea466458-5f5f-4f2b-b5f8-ab4d23ab20bd
 langcode: en-gb
 status: true
 dependencies:
   config:
-    - field.field.node.application.body
-    - field.field.node.application.field_additional_information
-    - field.field.node.application.field_meta_tags
-    - field.field.node.application.field_site_topics
-    - field.field.node.application.field_summary
-    - node.type.application
+    - field.field.node.publication.body
+    - field.field.node.publication.field_meta_tags
+    - field.field.node.publication.field_publication_type
+    - field.field.node.publication.field_published_date
+    - field.field.node.publication.field_site_topics
+    - field.field.node.publication.field_summary
+    - node.type.publication
   module:
+    - datetime
     - metatag
+    - options
     - text
     - user
-id: node.application.default
+id: node.publication.default
 targetEntityType: node
-bundle: application
+bundle: publication
 mode: default
 content:
   body:
@@ -25,19 +28,28 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_additional_information:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 102
-    region: content
   field_meta_tags:
     type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 105
+    region: content
+  field_publication_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_published_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_site_topics:
     type: entity_reference_label

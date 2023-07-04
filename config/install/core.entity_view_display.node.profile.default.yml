@@ -1,21 +1,20 @@
-uuid: 5c450f37-09e7-4f6a-a185-e0d2dd21620f
+uuid: e4b64906-8fbf-4014-b11d-142648696854
 langcode: en-gb
 status: true
 dependencies:
   config:
-    - field.field.node.application.body
-    - field.field.node.application.field_additional_information
-    - field.field.node.application.field_meta_tags
-    - field.field.node.application.field_site_topics
-    - field.field.node.application.field_summary
-    - node.type.application
+    - field.field.node.profile.body
+    - field.field.node.profile.field_department
+    - field.field.node.profile.field_meta_tags
+    - field.field.node.profile.field_summary
+    - node.type.profile
   module:
     - metatag
     - text
     - user
-id: node.application.default
+id: node.profile.default
 targetEntityType: node
-bundle: application
+bundle: profile
 mode: default
 content:
   body:
@@ -25,10 +24,11 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_additional_information:
-    type: text_default
+  field_department:
+    type: string
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     weight: 102
     region: content
@@ -38,14 +38,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 105
-    region: content
-  field_site_topics:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 103
     region: content
   field_summary:
     type: basic_string
