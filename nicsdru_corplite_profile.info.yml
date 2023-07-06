@@ -41,6 +41,7 @@ install:
   - honeypot
   - http_cache_control
   - image
+  - inline_entity_form
   - inline_form_errors
   - language
   - link
