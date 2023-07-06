@@ -13,9 +13,11 @@ install:
   - ckeditor5
   - config
   - config_filter
+  - contact
   - content_lock
   - content_moderation
   - contextual
+  - comment
   - datetime
   - dblog
   - diff
@@ -59,11 +61,6 @@ install:
   - moderation_sidebar
   - node
   - options
-  - origins_metatag
-  - origins_qa
-  - origins_toc
-  - origins_unique_title
-  - origins_workflow
   - page_cache
   - paragraphs
   - path
@@ -83,6 +80,7 @@ install:
   - token
   - token_filter
   - toolbar
+  - tour
   - twig_tweak
   - ultimate_cron
   - update
