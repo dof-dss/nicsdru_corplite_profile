@@ -5,51 +5,102 @@ core_version_requirement: ^8.8 || ^9 || ^10
 distribution:
   name: corplite
 install:
+  - admin_toolbar
+  - allowed_formats
   - block
   - block_content
   - breakpoint
   - ckeditor5
-  - comment
   - config
-  - contact
+  - config_filter
+  - content_lock
+  - content_moderation
   - contextual
   - datetime
   - dblog
+  - diff
   - dynamic_page_cache
   - editor
+  - embed
+  - entity_browser
+  - entity_browser_entity_form
+  - entity_embed
+  - entity_reference_revisions
   - field
+  - field_group
   - field_ui
   - file
+  - file_delete_ui
+  - filelog
   - filter
+  - flag
+  - google_tag
+  - handy_cache_tags
   - help
   - history
+  - honeypot
+  - http_cache_control
   - image
+  - inline_form_errors
   - language
   - link
   - locale
+  - media
+  - media_library
   - menu_link_content
+  - menu_breadcrumb
   - menu_ui
   - metatag
-  - mysql
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - metatag_verification
+  - metatag_views
+  - migrate
+  - migrate_drupal
+  - migrate_plus
+  - migrate_tools
+  - migrate_upgrade
+  - moderation_sidebar
   - node
+  - node_edit_protection
+  - noreferrer
   - options
+  - origins_metatag
+  - origins_qa
+  - origins_toc
+  - origins_unique_title
+  - origins_workflow
   - page_cache
+  - paragraphs
   - path
   - path_alias
+  - pathauto
+  - readonlymode
   - redirect
+  - redis
+  - responsive_image
+  - scheduled_transitions
   - search
   - shortcut
+  - structure_sync
   - system
   - taxonomy
   - text
   - token
+  - token_filter
   - toolbar
-  - tour
+  - twig_tweak
+  - ultimate_cron
   - update
   - user
+  - views_custom_cache_tag
   - views_ui
-  - pathauto
   - views
+  - webform
+  - webform_access
+  - webform_node
+  - webform_ui
+  - workflows
 themes:
   - olivero
   - claro
