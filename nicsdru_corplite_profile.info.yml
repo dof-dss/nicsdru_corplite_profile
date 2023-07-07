@@ -65,7 +65,6 @@ install:
   - origins_common
   - origins_metatag
   - origins_toc
-  - origins_workflow
   - page_cache
   - paragraphs
   - path
