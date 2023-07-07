@@ -62,6 +62,12 @@ install:
   - moderation_sidebar
   - node
   - options
+  - origins_common
+  - origins_media
+  - origins_metatag
+  - origins_qa
+  - origins_toc
+  - origins_workflow
   - page_cache
   - paragraphs
   - path
