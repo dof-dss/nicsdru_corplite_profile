@@ -22,6 +22,7 @@ install:
   - dblog
   - diff
   - dynamic_page_cache
+  - easy_install_d10
   - editor
   - embed
   - entity_browser
