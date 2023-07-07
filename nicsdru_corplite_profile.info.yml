@@ -63,7 +63,6 @@ install:
   - node
   - options
   - origins_common
-  - origins_media
   - origins_metatag
   - origins_qa
   - origins_toc
@@ -79,6 +78,9 @@ install:
   - responsive_image
   - scheduled_transitions
   - search
+  - search_api
+  - search_api_autocomplete
+  - search_api_solr
   - shortcut
   - structure_sync
   - system
