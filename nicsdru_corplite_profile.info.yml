@@ -11,6 +11,7 @@ install:
   - block_content
   - breakpoint
   - ckeditor5
+  - clone_nodes
   - config
   - config_filter
   - contact
