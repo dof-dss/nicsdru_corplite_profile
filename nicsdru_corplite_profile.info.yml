@@ -18,6 +18,7 @@ install:
   - content_moderation
   - contextual
   - comment
+  - date_facet_drilldown
   - datetime
   - dblog
   - diff
