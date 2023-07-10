@@ -65,6 +65,7 @@ install:
   - options
   - origins_common
   - origins_metatag
+  - origins_qa
   - origins_toc
   - page_cache
   - paragraphs
