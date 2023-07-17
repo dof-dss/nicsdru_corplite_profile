@@ -7,6 +7,7 @@ distribution:
 install:
   - admin_toolbar
   - allowed_formats
+  - automated_cron
   - block
   - block_content
   - breakpoint
@@ -71,6 +72,7 @@ install:
   - origins_metatag
   - origins_qa
   - origins_toc
+  - origins_workflow
   - page_cache
   - paragraphs
   - path
