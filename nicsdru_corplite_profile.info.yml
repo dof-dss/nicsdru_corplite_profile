@@ -13,13 +13,14 @@ install:
   - breakpoint
   - ckeditor5
   - clone_nodes
+  - comment
   - config
   - config_filter
   - contact
   - content_lock
   - content_moderation
   - contextual
-  - comment
+  - cookie_content_blocker
   - date_facet_drilldown
   - datetime
   - dblog
@@ -32,6 +33,7 @@ install:
   - entity_browser_entity_form
   - entity_embed
   - entity_reference_revisions
+  - eu_cookie_compliance
   - field
   - field_group
   - field_ui
@@ -40,6 +42,7 @@ install:
   - filter
   - flag
   - geolocation
+  - google_tag
   - handy_cache_tags
   - help
   - history
