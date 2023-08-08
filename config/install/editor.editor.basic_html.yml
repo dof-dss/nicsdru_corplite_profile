@@ -7,7 +7,7 @@ dependencies:
   module:
     - ckeditor5
 _core:
-  default_config_hash: 73ekYXVxL7c9YYcEbbelygiqoRqKTFwGo6_NsOsU3RI
+  default_config_hash: lxfxPX1HIkVjmvgNcqWfKd_jPrCJ3z4KTMFBHnyf4S0
 format: basic_html
 editor: ckeditor5
 settings:
@@ -32,7 +32,9 @@ settings:
       - undo
       - redo
       - '|'
+      - importWord
       - specialCharacters
+      - fullScreen
   plugins:
     ckeditor5_heading:
       enabled_headings:
