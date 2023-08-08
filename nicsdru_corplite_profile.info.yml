@@ -12,6 +12,7 @@ install:
   - block_content
   - breakpoint
   - ckeditor5
+  - ckeditor5_allowed_html
   - clone_nodes
   - comment
   - config
